@@ -1,4 +1,4 @@
-# Hi, I'm Barry Au Yeung 👋
+# Hi, I'm Barry Au-Yeung 👋
 
 **Senior DevOps Engineer · Build & Release · Open Source**
 
