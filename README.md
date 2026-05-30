@@ -15,22 +15,31 @@ My focus is on the unglamorous work that actually matters: robust CI/CD pipeline
 - **Kubernetes cluster architecture** — EKS, GKE, AKS, GitOps with ArgoCD
 - **CI/CD pipeline design** — GitHub Actions, Jenkins, GitLab CI, semantic versioning
 - **Infrastructure as Code** — Terraform modules, Ansible, multi-environment management
-- **Observability** — Prometheus, Grafana, OpenTelemetry, structured logging
-- **DevSecOps** — container scanning, secrets management, RBAC
+- **Observability** — Prometheus, Grafana, OpenTelemetry, distributed tracing
+- **DevSecOps** — container scanning, secrets rotation, RBAC
 - **Developer platforms** — internal tooling that makes the rest of the team faster
 
 ---
 
-## Open Source Projects
+## Open Source Projects (15)
 
 | Project | What It Is | Key Result |
 |---------|-----------|------------|
-| [kubernetes-platform-bootstrap](https://github.com/bazdev0001/kubernetes-platform-bootstrap) | Full Kubernetes cluster setup: EKS/GKE/AKS, ArgoCD GitOps, Prometheus, RBAC | Bootstraps production cluster in 45 minutes |
-| [cicd-pipeline-templates](https://github.com/bazdev0001/cicd-pipeline-templates) | GitHub Actions, Jenkinsfiles, semantic versioning for Python/Node/Go | Cut deployment setup time from 3 days to 2 hours |
-| [python-observability-stack](https://github.com/bazdev0001/python-observability-stack) | FastAPI + Prometheus + OpenTelemetry + Grafana in Docker Compose | Reduced MTTR from 4 hours to 22 minutes |
-| [zero-downtime-deploy](https://github.com/bazdev0001/zero-downtime-deploy) | Blue-green and canary scripts with auto-rollback, battle-tested on k8s | Rollback time: 45 minutes → 90 seconds |
-| [infrastructure-as-code-toolkit](https://github.com/bazdev0001/infrastructure-as-code-toolkit) | Terraform AWS modules (EKS, RDS, VPC) + Ansible playbooks | Environment provisioning: 3 days → 45 minutes |
-| [container-security-scanner](https://github.com/bazdev0001/container-security-scanner) | Python CVE scanner wrapping Trivy, blocks CI on critical vulns, SARIF output | Caught 200+ critical CVEs before production |
+| [nexusdeploy-k8s-platform](https://github.com/bazdev0001/nexusdeploy-k8s-platform) | Production K8s platform: EKS/GKE/AKS, ArgoCD GitOps, Prometheus | Bootstraps production cluster in 45 min |
+| [steelpipe-aws-terraform](https://github.com/bazdev0001/steelpipe-aws-terraform) | Opinionated Terraform modules for AWS production infra | Full AWS stack: 8 minutes |
+| [bytegate-cicd-engine](https://github.com/bazdev0001/bytegate-cicd-engine) | Multi-language CI/CD templates: GitHub Actions, Jenkins, GitLab | Deploy setup: 3 days → 20 min |
+| [sentinel-observability](https://github.com/bazdev0001/sentinel-observability) | FastAPI + Prometheus + OpenTelemetry + Grafana stack | MTTR: 4 hours → 22 min |
+| [ghostship-deploy](https://github.com/bazdev0001/ghostship-deploy) | Blue-green + canary deployment with auto-rollback | Rollback: 45 min → 90 sec |
+| [ironclad-security-scanner](https://github.com/bazdev0001/ironclad-security-scanner) | Docker CVE scanner: policy engine + SARIF output | Caught 200+ CVEs before prod |
+| [flowforge-platform-eng](https://github.com/bazdev0001/flowforge-platform-eng) | Internal developer platform: service catalog + golden paths | Onboarding: 5 days → 4 hours |
+| [cloudbridge-multi-cloud](https://github.com/bazdev0001/cloudbridge-multi-cloud) | Unified Python library: AWS, GCP, Azure — same API | Cloud migration: 6 weeks → 2 weeks |
+| [tracevault-distributed-tracing](https://github.com/bazdev0001/tracevault-distributed-tracing) | OpenTelemetry + Jaeger tracing library for Python | Debug latency issues in minutes |
+| [helmsmith-chart-library](https://github.com/bazdev0001/helmsmith-chart-library) | Reusable Helm chart library for production workloads | Chart authoring: 2 days → 30 min |
+| [archon-gitops-manager](https://github.com/bazdev0001/archon-gitops-manager) | Multi-cluster GitOps: manage 50+ clusters from one repo | 8 manual → 50+ declarative |
+| [chaosgate-engineering](https://github.com/bazdev0001/chaosgate-engineering) | Chaos experiments for K8s: network, pod failures, CPU | Found 12 silent failures before prod |
+| [cloudlens-cost-optimizer](https://github.com/bazdev0001/cloudlens-cost-optimizer) | Multi-cloud cost analysis + rightsizing recommendations | Found $17k/month in waste |
+| [devonboard-platform](https://github.com/bazdev0001/devonboard-platform) | Automated onboarding: GitHub, AWS, Slack in one command | 5 days → 4 hours |
+| [vaultkeeper-secrets-manager](https://github.com/bazdev0001/vaultkeeper-secrets-manager) | Secrets rotation automation: Vault, AWS SM, k8s Secrets | 200+ secrets auto-rotated |
 
 ---
 
@@ -47,16 +56,8 @@ My focus is on the unglamorous work that actually matters: robust CI/CD pipeline
 
 ---
 
-## GitHub Stats
-
 ![Barry's GitHub Stats](https://github-readme-stats.vercel.app/api?username=bazdev0001&show_icons=true&theme=dark&hide_border=true)
 
 ---
 
-## Currently Working On
-
-Exploring eBPF-based observability with Cilium for zero-overhead network visibility. Also looking at how to make GitOps workflows more self-healing when drift is detected.
-
----
-
-*Open to interesting infrastructure challenges. Find me on [LinkedIn](https://linkedin.com).*
+*Open to interesting infrastructure challenges. barry@bauyeung.com*
